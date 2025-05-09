@@ -34,15 +34,15 @@ function App() {
 
   return (
     <div className="d-flex align-items-center justify-content-center vh-100">
-      <div className="container border p-4 bg-dark rounded-4 shadow" style={{width: "300px"}}>
+      <div className="container border p-4 bg-dark rounded-4" style={{width: "300px"}}>
         <div className="text-center mb-3">
-          <input type="text" className="form-control text-end" style={{fontSize:"20px"}} value={result} placeholder="0" readOnly/>
+          <input type="text" className="form-control text-end" style={{fontSize:"25px"}} value={result} placeholder="0" readOnly/>
         </div>
         <div className='d-flex justify-content-center'>
          <button className="btn btn-secondary m-1 w-25" onClick={()=>setResult("")}>AC</button>
          <button className="btn btn-secondary m-1 w-25" onClick={()=>setResult(prev=>prev.toString().slice(0,-1))}>DEL</button>
          <button className="btn btn-secondary m-1 w-25" onClick={()=>setResult(prev=>prev/100)}>%</button>
-         <button className="btn btn-secondary m-1 w-25" onClick={()=>handleClick("/")}>/</button>
+         <button className="btn btn-secondary m-1 w-25" onClick={()=>handleClick("/")}>÷</button>
         </div>
         <div className='d-flex justify-content-center'>
           <button className="btn btn-secondary m-1 w-25" onClick={()=>handleClick("7")}>7</button>
